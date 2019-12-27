@@ -1,13 +1,6 @@
-# Nicole Stephan
-# 5222 Final Project 
-# Choropleth Map
-
-import sys
-sys.path.append('/Users/nicolestephan/Desktop/5222/gisalgs')
-from geom.shapex import *
-from geom.point import *
+from src.point import *
+from src.shapex import *
 import matplotlib.pyplot as plt
-import numpy as np
 
 def eq_bins(lower_bound, width, class_num):
     bins = []
