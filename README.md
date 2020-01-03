@@ -6,11 +6,11 @@ Currently, this program can only support either equal interval or quantile class
 This program was created for a class project and utilizes source code from my professor and matplotlib to display the map.
 
 ## Execute
-'''
+
 $ pip3 install matplotlib
 
 $ python choropleth.py
-'''
+
 Respond to these inputs in terminal:
 
 > Shapefile path: 'path/to/.shp file'
