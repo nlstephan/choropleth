@@ -2,12 +2,14 @@ from src.point import *
 from src.shapex import *
 import matplotlib.pyplot as plt
 
+# create equal interval bins
 def eq_bins(lower_bound, width, class_num):
     bins = []
     for low in range(int(lower_bound), int(lower_bound) + class_num*width + 1, width):
         bins.append((low, low+width))
     return bins
 
+# create quantile bins
 def qu_bins(data, class_num):
     obs_per_bin = len(data)//class_num
     remainder = len(data)%class_num
@@ -26,6 +28,7 @@ def qu_bins(data, class_num):
         bins.append((b[0], b[-1]))
     return bins
 
+# draw map
 def draw_choropleth():
     def add_patch(face_color, class_method, poly):
         for b in class_method:
@@ -33,9 +36,9 @@ def draw_choropleth():
                 p1 = plt.Polygon(poly, closed=True, fill=True, facecolor=face_color[b], edgecolor='black')
                 ax.add_patch(p1)
 
-    fname = input('Enter shapefile path: ')
+    fname = input('Shapefile path: ')
     shp = shapex(fname)
-    prop = input('Enter quantifiable attribute to map: ')
+    prop = input('Quantifiable attribute to map: ')
     class_num = int(input('Number of classes (2-9): '))
     class_method = input('Classification method (equal interval or quantile): ')
     colors = [ '#fff7fb', '#ece2f0', '#d0d1e6', '#a6bddb', '#67a9cf', '#3690c0', '#02818a', '#016c59', '#014636' ]
@@ -80,7 +83,6 @@ def draw_choropleth():
     plt.grid()
     plt.show()
 
-draw_choropleth()
 
 
 
