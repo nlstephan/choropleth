@@ -84,5 +84,5 @@ def draw_choropleth():
     plt.show()
 
 
-
+draw_choropleth()
 
