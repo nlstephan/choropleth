@@ -9,7 +9,7 @@ This program was created for a class project and utilizes source code from my pr
 ```
 $ pip3 install matplotlib
 
-$ python choropleth.py
+$ python draw_choropleth.py
 ```
 Respond to these inputs in terminal:
 
