@@ -11,12 +11,15 @@ install matplotlib
 
 run draw_choropleth()
 
-Respond to these inputs in termainal:
+Respond to these inputs in terminal:
 
-Shapefile path: 'path/to/.shp file'
-Quantifiable attribute to map: name of attribute
-Number of classes (2-9): number in range 2-9
-Classification method (equal interval or quantile): quantile or equal interval, depending on desired visualization
+> Shapefile path: 'path/to/.shp file'
 
-The map will pop up in separate matplotlib window.
+> Quantifiable attribute to map: name of attribute
+
+> Number of classes (2-9): number in range 2-9
+
+> Classification method (equal interval or quantile): quantile or equal interval, depending on desired visualization
+
+The map will pop up in separate matplotlib window. 
 
