@@ -5,7 +5,7 @@ Currently, this program can only support either equal interval or quantile class
 
 This program was created for a class project and utilizes source code from my professor and matplotlib to display the map.
 
-# To Execute
+## To Execute
 
 install matplotlib
 
@@ -13,10 +13,10 @@ run draw_choropleth()
 
 Respond to these inputs in termainal:
 
->>> Shapefile path: 'path/to/.shp file'
->>> Quantifiable attribute to map: name of attribute
->>> Number of classes (2-9): number in range 2-9
->>> Classification method (equal interval or quantile): quantile or equal interval, depending on desired visualization
+Shapefile path: 'path/to/.shp file'
+Quantifiable attribute to map: name of attribute
+Number of classes (2-9): number in range 2-9
+Classification method (equal interval or quantile): quantile or equal interval, depending on desired visualization
 
 The map will pop up in separate matplotlib window.
 
